@@ -1,0 +1,38 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 20
+    buildToolsVersion "20.0.0"
+
+    defaultConfig {
+        applicationId "com.joshskeen.weatherview"
+        minSdkVersion 19
+        targetSdkVersion 20
+        versionCode 1;
+        versionName "1.0"
+        buildConfigField "String", "WEATHERVIEW_API_KEY", "\"" + GRADLE_WEATHERVIEW_API_KEY + "\"";
+    }
+    buildTypes {
+        release {
+            runProguard false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    afterEvaluate {
+        tasks.findByName("assembleDebug").dependsOn("testDebugClasses")
+    }
+    apply plugin: 'android-unit-test'
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.squareup.retrofit:retrofit:1.7.1'
+    testCompile 'org.easytesting:fest:1.0.16'
+    testCompile 'junit:junit:4.+'
+    testCompile 'org.robolectric:robolectric:2.3'
+    testCompile 'com.squareup:fest-android:1.0.8'
+    testCompile 'com.github.tomakehurst:wiremock:1.38'
+    testCompile 'org.apache.httpcomponents:httpclient:4.4-beta1'
+
+}
+

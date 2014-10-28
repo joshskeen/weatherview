@@ -1,0 +1,131 @@
+{
+  "response": {
+  "version":"0.1",
+  "termsofService":"http://www.wunderground.com/weather/api/d/terms.html",
+  "features": {
+  "conditions": 1
+  }
+		, "results": [
+		{
+		"name": "Atlanta",
+		"city": "Atlanta",
+		"state": "GA",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "30301.1.99999",
+		"l": "/q/zmw:30301.1.99999"
+		}
+		,
+		{
+		"name": "Atlanta",
+		"city": "Atlanta",
+		"state": "ID",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "83601.1.99999",
+		"l": "/q/zmw:83601.1.99999"
+		}
+		,
+		{
+		"name": "Atlanta",
+		"city": "Atlanta",
+		"state": "IL",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "61723.1.99999",
+		"l": "/q/zmw:61723.1.99999"
+		}
+		,
+		{
+		"name": "Atlanta",
+		"city": "Atlanta",
+		"state": "IN",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "46031.1.99999",
+		"l": "/q/zmw:46031.1.99999"
+		}
+		,
+		{
+		"name": "Atlanta",
+		"city": "Atlanta",
+		"state": "KS",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "67008.1.99999",
+		"l": "/q/zmw:67008.1.99999"
+		}
+		,
+		{
+		"name": "Atlanta",
+		"city": "Atlanta",
+		"state": "LA",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "71404.1.99999",
+		"l": "/q/zmw:71404.1.99999"
+		}
+		,
+		{
+		"name": "Atlanta",
+		"city": "Atlanta",
+		"state": "MI",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "49709.1.99999",
+		"l": "/q/zmw:49709.1.99999"
+		}
+		,
+		{
+		"name": "Atlanta",
+		"city": "Atlanta",
+		"state": "MO",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "63530.1.99999",
+		"l": "/q/zmw:63530.1.99999"
+		}
+		,
+		{
+		"name": "Atlanta",
+		"city": "Atlanta",
+		"state": "NE",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "68923.1.99999",
+		"l": "/q/zmw:68923.1.99999"
+		}
+		,
+		{
+		"name": "Atlanta",
+		"city": "Atlanta",
+		"state": "NY",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "14808.1.99999",
+		"l": "/q/zmw:14808.1.99999"
+		}
+		,
+		{
+		"name": "Atlanta",
+		"city": "Atlanta",
+		"state": "TX",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "75551.1.99999",
+		"l": "/q/zmw:75551.1.99999"
+		}
+		]
+	}
+}
