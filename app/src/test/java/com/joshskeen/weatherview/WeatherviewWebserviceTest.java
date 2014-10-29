@@ -15,7 +15,7 @@ import static com.github.tomakehurst.wiremock.client.WireMock.*;
 import static org.fest.assertions.api.Assertions.assertThat;
 
 @RunWith(RobolectricTestRunner.class)
-@Config(emulateSdk = 18)
+@Config(emulateSdk = 18, manifest = "./src/main/AndroidManifest.xml")
 public class WeatherviewWebserviceTest {
 
     private WeatherServiceManager mWeatherServiceManager;
