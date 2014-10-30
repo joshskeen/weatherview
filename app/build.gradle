@@ -26,36 +26,21 @@ android {
 
 dependencies {
     repositories {
+        jcenter()
         mavenLocal()
         mavenCentral()
         maven {
             url 'https://oss.sonatype.org/content/repositories/snapshots/'
         }
     }
-    compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.squareup.retrofit:retrofit:1.7.1'
-    testCompile('org.robolectric:robolectric:2.4-SNAPSHOT') {
-        exclude module: 'classworlds'
-        exclude module: 'maven-artifact'
-        exclude module: 'maven-artifact-manager'
-        exclude module: 'maven-error-diagnostics'
-        exclude module: 'maven-model'
-        exclude module: 'maven-plugin-registry'
-        exclude module: 'maven-profile'
-        exclude module: 'maven-project'
-        exclude module: 'maven-settings'
-        exclude module: 'nekohtml'
-        exclude module: 'plexus-container-default'
-        exclude module: 'plexus-interpolation'
-        exclude module: 'plexus-utils'
-        exclude module: 'wagon-file'
-        exclude module: 'wagon-http-lightweight'
-        exclude module: 'wagon-http-shared'
-        exclude module: 'wagon-provider-api'
-    }
+    compile 'com.squareup:dagger:0.9.1'
+    provided 'com.squareup:dagger-compiler:0.9.1'
+
+    testCompile('org.robolectric:robolectric:2.4-SNAPSHOT')
     testCompile 'org.easytesting:fest:1.0.16'
     testCompile 'junit:junit:4.+'
+    testCompile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'com.squareup:fest-android:1.0.8'
-    testCompile 'com.github.tomakehurst:wiremock:1.51'
 }
 
