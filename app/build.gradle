@@ -11,17 +11,18 @@ android {
         versionCode 1;
         versionName "1.0"
         buildConfigField "String", "WEATHERVIEW_API_KEY", "\"" + GRADLE_WEATHERVIEW_API_KEY + "\"";
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
         release {
-            runProguard false
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
     afterEvaluate {
         tasks.findByName("assembleDebug").dependsOn("testDebugClasses")
     }
-    apply plugin: 'android-unit-test'
 }
 
 dependencies {
