@@ -12,7 +12,7 @@ public class WeatherviewApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        mObjectGraph = ObjectGraph.create(new WeatherviewModule(this));
+        mObjectGraph = ObjectGraph.create(new WeatherViewModule(this));
     }
 
     public static WeatherviewApplication get(Context context) {
